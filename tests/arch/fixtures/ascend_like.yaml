@@ -54,21 +54,21 @@ children:
         instruction_queue_depth: 16
 
       - name: MTE1
-        kind: dma
+        kind: pipe
         allowed_src_kinds: [storage]
         allowed_dst_kinds: [storage]
         allowed_src_names: [L1Buffer]
         allowed_dst_names: [L0A, L0B]
         bandwidth: 256
       - name: MTE2
-        kind: dma
+        kind: pipe
         allowed_src_kinds: [storage]
         allowed_dst_kinds: [storage]
         allowed_src_names: [GM]
         allowed_dst_names: [L1Buffer, UB]
         bandwidth: 64
       - name: MTE3
-        kind: dma
+        kind: pipe
         allowed_src_kinds: [storage]
         allowed_dst_kinds: [storage]
         allowed_src_names: [UB]
